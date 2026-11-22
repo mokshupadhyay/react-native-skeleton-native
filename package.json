@@ -1,6 +1,6 @@
 {
   "name": "react-native-skeleton-native",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Skeleton and shimmer placeholders for React Native whose animation runs on the platform compositor (Core Animation on iOS, RenderThread on Android), so it keeps moving while the JS thread and the UI thread are busy. Old and New Architecture.",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",

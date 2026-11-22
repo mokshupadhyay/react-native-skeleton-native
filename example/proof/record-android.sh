@@ -2,7 +2,7 @@
 # Record every library x scenario on an Android device or emulator (release
 # build already installed). Videos go to example/proof/raw/android/.
 # Usage: sh example/proof/record-android.sh <adb serial> [libs] [scenarios]
-set -eu
+set -u
 SERIAL="${1:?usage: record-android.sh <adb serial> [libs] [scenarios]}"
 LIBS="${2:-native placeholder shimmer fast}"
 SCENARIOS="${3:-idle js ui storm}"
@@ -21,7 +21,10 @@ for lib in $LIBS; do
     $A shell am start -W -a android.intent.action.VIEW -d "'skeletonexample://run?lib=$lib&scenario=$sc'" com.skeletonexample >/dev/null 2>&1
     wait $REC || true
     sleep 1
-    $A pull /sdcard/proof.mp4 "$OUT/$lib-$sc.mp4" >/dev/null
-    echo "recorded $lib-$sc"
+    if $A pull /sdcard/proof.mp4 "$OUT/$lib-$sc.mp4" >/dev/null 2>&1; then
+      echo "recorded $lib-$sc"
+    else
+      echo "FAILED $lib-$sc" >&2
+    fi
   done
 done
