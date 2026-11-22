@@ -1,0 +1,7 @@
+{
+  "name": "skeleton-example-helpers",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Example-only native helper: block the UI/main thread for a given time.",
+  "main": "index.js"
+}

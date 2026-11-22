@@ -1,0 +1,13 @@
+apply plugin: "com.android.library"
+
+android {
+  namespace "com.skeletonexamplehelpers"
+  compileSdkVersion rootProject.ext.has("compileSdkVersion") ? rootProject.ext.get("compileSdkVersion") : 36
+  defaultConfig {
+    minSdkVersion rootProject.ext.has("minSdkVersion") ? rootProject.ext.get("minSdkVersion") : 24
+  }
+}
+
+dependencies {
+  implementation "com.facebook.react:react-android"
+}

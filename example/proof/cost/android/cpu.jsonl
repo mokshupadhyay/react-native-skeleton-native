@@ -1,0 +1,5 @@
+{"lib":"none","windowS":8,"mainMsPerS":26,"renderThreadMsPerS":3}
+{"lib":"native","windowS":8,"mainMsPerS":38,"renderThreadMsPerS":608}
+{"lib":"placeholder","windowS":8,"mainMsPerS":161,"renderThreadMsPerS":466}
+{"lib":"shimmer","windowS":8,"mainMsPerS":237,"renderThreadMsPerS":452}
+{"lib":"fast","windowS":8,"mainMsPerS":711,"renderThreadMsPerS":441}

@@ -1,0 +1,5 @@
+{"lib":"none","windowS":8,"mainMsPerS":6,"backboarddMsPerS":2}
+{"lib":"native","windowS":8,"mainMsPerS":3,"backboarddMsPerS":212}
+{"lib":"placeholder","windowS":8,"mainMsPerS":32,"backboarddMsPerS":127}
+{"lib":"shimmer","windowS":8,"mainMsPerS":137,"backboarddMsPerS":160}
+{"lib":"fast","windowS":8,"mainMsPerS":206,"backboarddMsPerS":107}
